@@ -1,0 +1,52 @@
+
+
+
+.main-header {
+    background-color: white;
+    padding: 15px 0;
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+
+        .main-navigation {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+
+            @include xl {
+                display: none;
+            }
+
+            .main-menu {
+                padding-left: 0;
+                text-align: right;
+
+                .menu-item {
+                    display: inline-block;
+
+                    .menu-link {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: black;
+    
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                }
+
+                
+
+                    .menu-item:first-of-type a.menu-link {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
